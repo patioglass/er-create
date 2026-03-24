@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+ER 図プレビューをブラウザ上で生成する Next.js アプリです。
 
 ## Getting Started
 
@@ -6,31 +6,29 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## できること
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- テーブル名を入力して、テーブル単位で追加
+- カラム行を `+ カラム追加` で増やしながら入力
+- 制約はプルダウンから選択
+- `FK` を選ぶと参照テーブルと参照カラムを固定 UI で指定
+- 入力内容から ER 図プレビューを即時更新
 
-## Learn More
+## 入力項目
 
-To learn more about Next.js, take a look at the following resources:
+- カラム名
+- 内容
+- 制約
+- 型
+- 値例
+- 補足
+- 参照テーブル
+- 参照カラム
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`参照テーブル` と `参照カラム` は、制約で `FK` を選択した場合に使います。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
