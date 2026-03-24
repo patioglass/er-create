@@ -46,7 +46,7 @@ export const SAMPLE_TABLES: TableDraft[] = [
     name: "Company DB",
     columns: [
       createColumn({ id: "company-id", name: "id", description: "会社ID", constraint: "PRI", dataType: "number", example: "12" }),
-      createColumn({ id: "company-name", name: "company_name", description: "会社名", constraint: "NOT NULL", dataType: "string", example: "ワタナベデンキ", note: "注文票の明細用" }),
+      createColumn({ id: "company-name", name: "company_name", description: "会社名", constraint: "NOT NULL", dataType: "string", example: "xx株式会社", note: "" }),
       createColumn({ id: "company-created", name: "created_at", description: "作成日時", constraint: "NOT NULL", dataType: "datetime", example: "2026-03-24 10:00:00" }),
     ],
   },

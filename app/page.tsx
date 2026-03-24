@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <div className="fade-in-soft min-h-screen w-full overflow-x-auto">
-      <main className="mx-auto flex min-h-screen w-[1680px] min-w-[1680px] flex-col px-6 py-5 text-slate-900 lg:px-8">
+      <main className="mx-auto flex min-h-screen min-w-[900px] flex-col px-6 py-5 text-slate-900 lg:px-8">
         <section className="relative overflow-hidden rounded-[32px] border border-white/60 bg-[color:var(--surface)] p-6 backdrop-blur xl:p-8">
           <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-[radial-gradient(circle_at_top,rgba(31,122,90,0.18),transparent_70%)]" />
           <div className="relative flex flex-col gap-8">
