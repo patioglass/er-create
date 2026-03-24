@@ -7,7 +7,6 @@ import { useEditorPersistence } from "./hooks/useEditorPersistence";
 
 const SHARE_TEXT = "DBの図をそれっぽく作るツール\n";
 const DEFAULT_SHARE_URL = "https://er-create.vercel.app/";
-const REPOSITORY_URL = "https://github.com/patioglass/er-create";
 const DEVELOPER_URL = "https://x.com/patioglass";
 
 export default function Home() {
@@ -72,15 +71,6 @@ export default function Home() {
                       className="inline-flex items-center gap-2 transition hover:text-slate-900"
                     >
                       <span>@patioglass</span>
-                    </a>
-                    <span className="font-mono text-xs uppercase tracking-[0.24em] text-[color:var(--accent)]">Repository</span>
-                    <a
-                      href={REPOSITORY_URL}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="inline-flex items-center gap-2 transition hover:text-slate-900"
-                    >
-                      <span>GitHub</span>
                     </a>
                   </div>
               </div>
